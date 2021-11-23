@@ -2,6 +2,9 @@
 import { Component } from 'react'
 
 export default class ComponenteDeClase extends Component {
+  // static defaultProps = {}
+  // static propTypes = {}
+
   constructor(props) {
     super(props)
     this.state = {
@@ -19,3 +22,6 @@ export default class ComponenteDeClase extends Component {
     )
   }
 }
+
+// ComponenteDeClase.defaultProps = {}
+// ComponenteDeClase.propTypes = {}
