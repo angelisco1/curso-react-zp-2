@@ -5,6 +5,7 @@ import CondicionalesYListas from './03-renderizado-condicional-y-listas/Condicio
 import EventosYEstados from './04-eventos-y-estados/EventosYEstados';
 import ComunicacionEntreCmps from './05-comunicacion-entre-componentes/ComunicacionEntreCmps';
 import ChildrenYFragments from './06-children-y-fragments/ChildrenYFragments';
+import ListaCocktails from './07-useeffect-y-http/ListaCocktails';
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
       {/* <CondicionalesYListas /> */}
       {/* <EventosYEstados /> */}
       {/* <ComunicacionEntreCmps /> */}
-      <ChildrenYFragments />
+      {/* <ChildrenYFragments /> */}
+      <ListaCocktails />
     </div>
   )
 

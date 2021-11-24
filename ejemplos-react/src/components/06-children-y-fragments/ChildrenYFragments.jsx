@@ -1,3 +1,4 @@
+import Carousel from './Carousel'
 import Acordeon from './Acordeon'
 import Button from './Button'
 import Sugus from '../02-propiedades/Sugus'
@@ -16,7 +17,7 @@ const ChildrenYFragments = () => {
   })
 
   return (
-    <div>
+    <>
       <h2>Propiedad children y React Fragments</h2>
 
       {/* <Button texto="Un botón" /> */}
@@ -34,12 +35,14 @@ const ChildrenYFragments = () => {
       </Acordeon>
 
       <Carousel>
-        <p>Slide 1</p>
-        <p>Slide 2</p>
-        <p>Slide 3</p>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
       </Carousel>
 
-    </div>
+    </>
   )
 }
 
