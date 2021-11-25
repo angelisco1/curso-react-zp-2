@@ -6,6 +6,8 @@ import EventosYEstados from './04-eventos-y-estados/EventosYEstados';
 import ComunicacionEntreCmps from './05-comunicacion-entre-componentes/ComunicacionEntreCmps';
 import ChildrenYFragments from './06-children-y-fragments/ChildrenYFragments';
 import ListaCocktails from './07-useeffect-y-http/ListaCocktails';
+import TemasAvanzados from './08-temas-avanzados/TemasAvanzados';
+import Formularios from './09-formularios/Formularios';
 
 const App = () => {
   return (
@@ -17,7 +19,9 @@ const App = () => {
       {/* <EventosYEstados /> */}
       {/* <ComunicacionEntreCmps /> */}
       {/* <ChildrenYFragments /> */}
-      <ListaCocktails />
+      {/* <ListaCocktails /> */}
+      {/* <TemasAvanzados /> */}
+      <Formularios />
     </div>
   )
 
