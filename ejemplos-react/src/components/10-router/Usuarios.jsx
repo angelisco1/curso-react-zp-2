@@ -1,16 +1,24 @@
 import { useEffect, useState } from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useSearchParams } from 'react-router-dom'
 
 const Usuarios = () => {
   const [usuarios, setUsuarios] = useState([])
+  const [queryParams] = useSearchParams()
+  console.log(queryParams)
 
   useEffect(() => {
-    fetch(`http://jsonplaceholder.typicode.com/users`)
+    let url = 'http://jsonplaceholder.typicode.com/users'
+
+    if (queryParams.has('limit')) {
+      url += `?_limit=${queryParams.get('limit')}`
+    }
+
+    fetch(url)
       .then(resp => resp.json())
       .then(datos => {
         setUsuarios(datos)
       })
-  }, [])
+  }, [queryParams])
 
   const listaUsuarios = usuarios.map(u => (
     <li key={u.id}>

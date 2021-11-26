@@ -1,0 +1,2 @@
+export const ADD_TAREA = 'ADD_TAREA'
+export const COMPLETE_TAREA = 'COMPLETE_TAREA'

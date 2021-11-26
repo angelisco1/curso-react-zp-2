@@ -3,6 +3,7 @@ import Error from './Error'
 import NuevoUsuario from './NuevoUsuario'
 import DetalleUsuario from './DetalleUsuario'
 import Usuarios from './Usuarios'
+import { isAuthenticated } from '../../utils/auth';
 
 const AppRouter = () => {
   return (
@@ -13,9 +14,9 @@ const AppRouter = () => {
         <li>
           <Link to="/">Usuarios</Link>
         </li>
-        <li>
+        {isAuthenticated()  && <li>
           <Link to="/nuevo-usuario">Nuevo usuario</Link>
-        </li>
+        </li>}
       </ul>
 
       <Routes>
@@ -25,7 +26,8 @@ const AppRouter = () => {
 
         <Route path="/" element={<Navigate to="/usuarios" replace={true} />} />
 
-        <Route path="/nuevo-usuario" element={<NuevoUsuario />} />
+        {isAuthenticated() && <Route path="/nuevo-usuario" element={<NuevoUsuario />} />}
+
         <Route path="*" element={<Error />} />
       </Routes>
     </div>

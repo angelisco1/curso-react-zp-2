@@ -9,6 +9,7 @@ import ListaCocktails from './07-useeffect-y-http/ListaCocktails';
 import TemasAvanzados from './08-temas-avanzados/TemasAvanzados';
 import Formularios from './09-formularios/Formularios';
 import AppRouter from './10-router/AppRouter';
+import Redux from './11-redux/Redux';
 
 const App = () => {
   return (
@@ -23,7 +24,8 @@ const App = () => {
       {/* <ListaCocktails /> */}
       {/* <TemasAvanzados /> */}
       {/* <Formularios /> */}
-      <AppRouter />
+      {/* <AppRouter /> */}
+      <Redux />
     </div>
   )
 
