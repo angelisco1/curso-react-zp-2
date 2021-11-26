@@ -8,6 +8,7 @@ import ChildrenYFragments from './06-children-y-fragments/ChildrenYFragments';
 import ListaCocktails from './07-useeffect-y-http/ListaCocktails';
 import TemasAvanzados from './08-temas-avanzados/TemasAvanzados';
 import Formularios from './09-formularios/Formularios';
+import AppRouter from './10-router/AppRouter';
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
       {/* <ChildrenYFragments /> */}
       {/* <ListaCocktails /> */}
       {/* <TemasAvanzados /> */}
-      <Formularios />
+      {/* <Formularios /> */}
+      <AppRouter />
     </div>
   )
 
